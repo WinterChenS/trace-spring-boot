@@ -1,0 +1,12 @@
+# Auto Configuration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.winterchen.trace.starter.config.TraceAutoConfiguration,\
+com.winterchen.trace.starter.config.TraceFeignClientAutoConfiguration,\
+com.winterchen.trace.starter.config.TraceZuulAutoConfiguration,\
+com.winterchen.trace.starter.config.TraceRestTemplateConfiguration,\
+com.winterchen.trace.starter.config.TraceDubboConfiguration
+
+# Environment Post Processor
+org.springframework.boot.env.EnvironmentPostProcessor=\
+com.winterchen.trace.starter.processor.TraceEnvironmentPostProcessor,\
+com.winterchen.trace.starter.instrument.dubbo.TraceDubboEnvironmentPostProcessor

@@ -1,0 +1,2 @@
+TraceDubboProviderFilter=com.winterchen.trace.starter.instrument.dubbo.provider.TraceDubboProviderFilter
+TraceDubboConsumerFilter=com.winterchen.trace.starter.instrument.dubbo.consumers.TraceDubboConsumerFilter

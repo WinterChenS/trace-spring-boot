@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.winterchen</groupId>
     <artifactId>trace-spring-boot-starter</artifactId>
-    <version>1.0.0-RELEASE</version>
+    <version>1.0.0-SNAPSHOT</version>
     <name>trace-spring-boot-starter</name>
     <description>log trace for spring boot starter</description>
 

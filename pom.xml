@@ -32,6 +32,7 @@
                 <role>owner</role>
             </roles>
             <timezone>+8</timezone>
+            <organizationUrl>https://winterchen.com</organizationUrl>
         </developer>
     </developers>
 
@@ -45,11 +46,11 @@
     <!-- 定义snapshots库和releases库的nexus地址 -->
     <distributionManagement>
         <snapshotRepository>
-            <id>oss</id>
+            <id>sonatype-nexus-snapshots</id>
             <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
         </snapshotRepository>
         <repository>
-            <id>oss</id>
+            <id>sonatype-nexus-staging</id>
             <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
     </distributionManagement>
@@ -216,6 +217,7 @@
 
     <modules>
         <module>trace-spring-boot-starter</module>
+        <module>trace-example</module>
     </modules>
 
 </project>

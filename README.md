@@ -5,7 +5,11 @@ MDC 实现的日志链路追踪组件
  import maven 
 
 ```xml
-
+<dependency>
+  <groupId>com.winterchen</groupId>
+  <artifactId>trace-spring-boot-starter</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+</dependency>
 ```
 
 logback-spring.xml or logback.xml properties change 

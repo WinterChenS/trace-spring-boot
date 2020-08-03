@@ -12,6 +12,7 @@
 
     <name>trace-spring-boot</name>
     <description>log trace for spring boot</description>
+    <url>https://github.com/WinterChenS/trace-spring-boot</url>
 
     <!-- 版权许可 -->
     <licenses>
@@ -32,15 +33,15 @@
                 <role>owner</role>
             </roles>
             <timezone>+8</timezone>
-            <organizationUrl>https://winterchen.com</organizationUrl>
+            <organizationUrl>https://blog.winterchen.com</organizationUrl>
         </developer>
     </developers>
 
     <!-- 代码库 -->
     <scm>
-        <connection>https://github.com/WinterChenS/trace-spring-boot</connection>
-        <developerConnection>https://github.com/WinterChenS</developerConnection>
-        <url>https://github.com/WinterChenS/trace-spring-boot.git</url>
+        <connection>scm:git:git://github.com/WinterChenS/trace-spring-boot.git</connection>
+        <developerConnection>scm:git:ssh://github.com/WinterChenS/trace-spring-boot.git</developerConnection>
+        <url>https://github.com/WinterChenS/trace-spring-boot/tree/master</url>
     </scm>
 
     <!-- 定义snapshots库和releases库的nexus地址 -->
@@ -135,7 +136,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
-                        <version>1.5</version>
+                        <version>1.6</version>
                         <executions>
                             <execution>
                                 <id>sign-artifacts</id>
@@ -189,7 +190,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-gpg-plugin</artifactId>
-                <version>1.5</version>
+                <version>1.6</version>
                 <executions>
                     <execution>
                         <id>sign-artifacts</id>
@@ -207,10 +208,17 @@
                 <version>1.6.8</version>
                 <extensions>true</extensions>
                 <configuration>
-                    <serverId>oss</serverId>
+                    <serverId>ossrh</serverId>
                     <nexusUrl>https://oss.sonatype.org/</nexusUrl>
                     <autoReleaseAfterClose>true</autoReleaseAfterClose>
                 </configuration>
+            </plugin>
+
+            <!--Release -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.1</version>
             </plugin>
         </plugins>
     </build>
